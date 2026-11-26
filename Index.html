@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f5496">
+  <title>Pilot : Approve</title>
+  <!-- favicon ฝังเป็น SVG ในไฟล์ (รูปเครื่องปริ้น) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5496'/%3E%3Crect x='20' y='9' width='24' height='15' rx='2' fill='%23c9d6ee'/%3E%3Crect x='9' y='21' width='46' height='23' rx='5' fill='%23fff'/%3E%3Ccircle cx='47' cy='29' r='2.8' fill='%232e9d4f'/%3E%3Crect x='15' y='35' width='34' height='5' rx='2.5' fill='%232f5496'/%3E%3Cpath d='M19 38h26v15a2 2 0 0 1-2 2H21a2 2 0 0 1-2-2z' fill='%23fff' stroke='%232f5496' stroke-width='2'/%3E%3Cpath d='M24 45h16M24 50h10' stroke='%232f5496' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5496'/%3E%3Crect x='20' y='9' width='24' height='15' rx='2' fill='%23c9d6ee'/%3E%3Crect x='9' y='21' width='46' height='23' rx='5' fill='%23fff'/%3E%3Ccircle cx='47' cy='29' r='2.8' fill='%232e9d4f'/%3E%3Crect x='15' y='35' width='34' height='5' rx='2.5' fill='%232f5496'/%3E%3Cpath d='M19 38h26v15a2 2 0 0 1-2 2H21a2 2 0 0 1-2-2z' fill='%23fff' stroke='%232f5496' stroke-width='2'/%3E%3Cpath d='M24 45h16M24 50h10' stroke='%232f5496' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    html, body { margin:0; padding:0; height:100%; overflow:hidden; background:#0a0a0a; }
+    iframe { width:100%; height:100vh; border:none; display:block; }
+  </style>
+</head>
+<body>
+  <iframe id="app" allowfullscreen></iframe>
+  <script>
+    // ⚠️ แก้บรรทัดนี้ทุกครั้งที่ Deployment URL เปลี่ยน (ตอน Deploy > New deployment ใหม่)
+    var BASE = "https://script.google.com/macros/s/AKfycbysP41Zll7kGH9L2GoDuj5PcOspgVaPfe-Ye7ZlqRW51oQ1N7fSATXtZeowgeI5ffzzUw/exec";
+    document.getElementById('app').src = BASE + window.location.search;
+  </script>
+</body>
+</html>
